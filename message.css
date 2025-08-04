@@ -1,0 +1,209 @@
+/*  
+<weight>: Use a value from 300 to 700
+<uniquifier>: Use a unique and descriptive class name
+*/
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+
+
+:root {
+    --beige: #DEE8CE;
+    --white: #FFF2F2;
+    --green: #1F7D53;
+    --black: #212121;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+body{
+    background-color: var(--black);
+}
+
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/Image12.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(20px) brightness(0.2);
+  z-index: -1;
+  pointer-events: none;
+  transition: filter 1.2s ease-in-out, transform 1.2s ease-in-out;
+  opacity: 1;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#final-content .final-main-text,
+#final-content .final-sub-text {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* TEXTS ONCE IN THE END */
+/* FINAL CONTENT WRAPPER */
+#final-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  gap: 1em;
+}
+
+.final-main-text {
+  font-size: 2rem;
+  font-family: "Spline Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--beige);
+  width: 100%;
+  margin-top: -2em;
+}
+
+.final-sub-text {
+  max-width: 60%;
+  max-height: 80%;
+  font-size: 1rem;
+  letter-spacing: 0.005em;
+  line-height: 1.8;
+  padding: 1.5em 2em;
+  border: 1px solid var(--beige);
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  font-family: "Spline Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: justify;
+  color: var(--beige);
+  margin-top: -1em;
+  margin-bottom: 1em;
+
+}
+
+.final-main-name {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: var(--beige);
+  opacity: 0.9;
+  text-align: center;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  margin-top: auto;   
+  margin-bottom: -1.3em;
+}
+
+/* MEDIA QUERIES */
+/* Tablet (portrait & landscape) */
+@media (max-width: 1024px) {
+    
+  #final-content {
+    padding: 1.5em;
+    gap: 1.5em;
+  }
+
+  .final-main-text {
+    font-size: 1.75rem;
+  }
+
+  .final-sub-text {
+    font-size: 0.95rem;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  .final-main-name {
+    font-size: 2rem;
+    bottom: 2em;
+  }
+}
+
+/* Phone (portrait) */
+@media (max-width: 768px) {
+  #final-content {
+    padding: 1em;
+    gap: 1.2em;
+  }
+
+  .final-main-text {
+    font-size: 1.5rem;
+  }
+
+  .final-sub-text {
+    font-size: 0.9rem;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+
+  .final-main-name {
+    font-size: 2rem;
+    bottom: 3em;
+  }
+}
+
+/* Small phones (extra small devices) */
+@media (max-width: 480px) {
+  #final-content {
+    padding: 1em 0.5em;
+    gap: 1em;
+  }
+
+  .final-main-text {
+    font-size: 1.3rem;
+  }
+
+  .final-sub-text {
+    font-size: 0.85rem;
+    max-height: 50vh;
+    overflow-y: auto;
+    padding: 1em;
+  }
+
+  .final-main-name {
+    font-size: 2rem;
+    bottom: 3em;
+  }
+}
