@@ -98,6 +98,7 @@ body{
 }
 
 .final-sub-text {
+  overflow-y: auto;
   max-width: 60%;
   max-height: 80%;
   font-size: 1rem;
@@ -106,7 +107,7 @@ body{
   padding: 1.5em 2em;
   border: 1px solid var(--beige);
   border-radius: 0.5em;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   font-family: "Spline Sans Mono", monospace;
   font-optical-sizing: auto;
