@@ -4,30 +4,31 @@ const images = [
 ];
 
 const texts = [
-  'Text1', 
-  'Text2', 
-  'Text3', 
-  'Text4', 
-  'Text5',
-  'Text6', 
-  'Text7', 
-  'Text8', 
-  'Text9', 
-  'Text10'
+  'Happy 6th Monthsary, Andrea Lyn',
+  'You’re my peace and happiness',
+  'Every day, I choose you',
+  'I’m so proud of you, mahal ko',
+  'Thank you for loving me despite my flaws',
+  'You’re the girl that I have met',
+  'I promise to never give up on us',
+  'Our love is my favorite story',
+  'I can’t wait for our future together',
+  'I love you, today and always'
 ];
 
 const subTexts = [
-  'Sub Text1', 
-  'Sub Text2', 
-  'Sub Text3', 
-  'Sub Text4', 
-  'Sub Text5',
-  'Sub Text6', 
-  'Sub Text7', 
-  'Sub Text8', 
-  'Sub Text9', 
-  'Sub Text10'
+  'Six months down, forever to go with you, mahal.',
+  'With you, I feel safe, calm, and truly myself.',
+  'Through highs and lows, ikaw at ikaw pa rin.',
+  'Lahat ng efforts mo, maliit man o malaki, ramdam ko at proud ako.',
+  'You accept me for who I am, and that means the world to me.',
+  'Walang hihigit sayo mahal, ikaw lang palagi.',
+  'No matter how hard it gets, pipiliin pa rin kita.',
+  'Every chapter with you is worth reading over and over.',
+  'Someday, magigising tayo sa sarili nating bahay, magkasama.',
+  'Ikaw ang forever ko, mahal koooo. I loveee youuu.'
 ];
+
 
 let currentIndex = 0;
 
